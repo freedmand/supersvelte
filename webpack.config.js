@@ -125,9 +125,8 @@ module.exports = wrap({
     ...(useAnalyzer
       ? [
         new BundleAnalyzerPlugin({
-          analyzerPort: 80,
-          analyzerHost: "0.0.0.0",
-          openAnalyzer: false
+          analyzerPort: 3000,
+          openAnalyzer: true
         })
       ]
       : [])
